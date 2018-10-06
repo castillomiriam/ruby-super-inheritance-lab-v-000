@@ -1,4 +1,5 @@
-class ChattyStudent < Student
+require_relative './student.rb'
+ class ChattyStudent < Student
 
   def hello
     super
@@ -6,10 +7,9 @@ class ChattyStudent < Student
   end
 
   def raise_hand
-  10.times do
-  super
-puts "Pick me!"
+    10.times do
+      super
+    end
   end
-end
 
-end
+end 
